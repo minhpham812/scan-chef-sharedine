@@ -76,7 +76,6 @@ export function ScheduleCalendar({
 
             const isSelected = selectedDay === day
             const isScheduled = scheduledDays.has(day)
-            const isToday = day === 16 // simplified: compare to actual today if needed
             const weekDay = new Date(year, month, day).getDay()
 
             return (
