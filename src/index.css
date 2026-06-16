@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8a7d52;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5f3ee;
+  --color-secondary-foreground: #2c2a24;
+  --color-background: #fafaf7;
+  --color-foreground: #2c2a24;
+  --color-muted: #9e9a8f;
+  --color-muted-foreground: #9e9a8f;
+  --color-border: #e8e5dc;
+  --color-accent: #8a7d52;
+  --color-accent-foreground: #ffffff;
+  --color-danger: #dc2626;
+  --color-danger-foreground: #ffffff;
+  --color-success: #2d7a3a;
+  --color-success-foreground: #ffffff;
+  --color-warning: #e65100;
+  --color-warning-foreground: #ffffff;
+  --color-card: #ffffff;
+  --color-sidebar-bg: #2c2a24;
+  --color-sidebar-text: #2c2a24;
+  --color-sidebar-active: #8a7d52;
+  --color-table-header-bg: #f5f3ee;
+  --color-table-header-text: #2c2a24;
+
+  --font-sans: "Noto Sans JP", system-ui, sans-serif;
+  --font-heading: "Noto Sans JP", system-ui, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 26px;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+  }
+}

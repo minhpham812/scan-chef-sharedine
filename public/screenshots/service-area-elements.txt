@@ -1,0 +1,17 @@
+Page: https://chef.sharedine.dev/service-area
+Title: CHEFLINK Table - シェフダッシュボード
+
+Interactive Elements:
+- heading "ChefLink Table" [level=1, ref=e2]
+- link "ダッシュボード" [ref=e4]
+- link "受注管理" [ref=e5]
+- link "チャット" [ref=e6]
+- link "メニュー管理" [ref=e7]
+- link "スケジュール" [ref=e8]
+- link "エリア設定" [ref=e9]
+- link "プロフィール" [ref=e10]
+- heading "提供エリア設定" [level=1, ref=e3]
+- textbox "拠点住所" [ref=e13]: 京都市山下区名胜藤西浦町172-1188
+- slider "提供半径" [ref=e11]: 12
+- heading "対応エリア" [level=2, ref=e12]
+- button "エリア設定を保存" [ref=e1]

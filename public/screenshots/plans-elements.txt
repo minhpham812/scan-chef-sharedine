@@ -1,0 +1,20 @@
+Page: https://chef.sharedine.dev/plans
+Title: CHEFLINK Table - シェフダッシュボード
+
+Interactive Elements:
+- heading "ChefLink Table" [level=1, ref=e1]
+- link "ダッシュボード" [ref=e6]
+- link "受注管理" [ref=e7]
+- link "チャット" [ref=e8]
+- link "メニュー管理" [ref=e9]
+- link "スケジュール" [ref=e10]
+- link "エリア設定" [ref=e11]
+- link "プロフィール" [ref=e12]
+- heading "メニュー管理" [level=1, ref=e13]
+- link "新規作成" [ref=e14]
+- button "公開中 (2)" [ref=e2]
+- button "下書き (1)" [ref=e3]
+- link "公開中 人気No.1 パーティー 季節の懐石コース ¥15,000 /人 342 45件 -" [ref=e4]
+  - heading "季節の懐石コース" [level=3, ref=e15]
+- link "公開中 パーティー おまかせ寿司コース ¥22,000 /人 218 28件 -" [ref=e5]
+  - heading "おまかせ寿司コース" [level=3, ref=e16]
