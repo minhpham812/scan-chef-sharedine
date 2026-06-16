@@ -68,7 +68,7 @@ export function ChatConversationPane({
       </div>
 
       <div className="sticky bottom-0 border-t border-[#e8e5dc] bg-[#f5f3ee] px-4 py-3 pb-[env(safe-area-inset-bottom,12px)] lg:pb-3">
-        <div className="flex items-center gap-2 lg:max-w-[640px]">
+        <div className="flex items-center gap-2">
           <button
             type="button"
             className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#e8e5dc] text-[#9e9a8f] transition-colors hover:bg-white"
