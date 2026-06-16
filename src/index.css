@@ -14,10 +14,13 @@
   --color-accent-foreground: #ffffff;
   --color-danger: #dc2626;
   --color-danger-foreground: #ffffff;
+  --color-danger-soft: #fef2f2;
   --color-success: #2d7a3a;
   --color-success-foreground: #ffffff;
   --color-warning: #e65100;
   --color-warning-foreground: #ffffff;
+  --color-weekend-sunday: #dc2626;
+  --color-weekend-saturday: #2563eb;
   --color-card: #ffffff;
   --color-sidebar-bg: #2c2a24;
   --color-sidebar-text: #2c2a24;

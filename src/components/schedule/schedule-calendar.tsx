@@ -60,7 +60,7 @@ export function ScheduleCalendar({
               key={d}
               className={cn(
                 'py-2 text-center text-[12px] font-medium',
-                i === 0 ? 'text-red-500' : i === 6 ? 'text-blue-500' : 'text-muted'
+                i === 0 ? 'text-weekend-sunday' : i === 6 ? 'text-weekend-saturday' : 'text-muted'
               )}
             >
               {d}
@@ -86,8 +86,8 @@ export function ScheduleCalendar({
                 className={cn(
                   'relative flex h-12 flex-col items-center justify-center border-b border-r border-border text-[14px] transition-colors hover:bg-primary/5',
                   isSelected && 'bg-primary/10 font-bold text-primary hover:bg-primary/5',
-                  !isSelected && weekDay === 0 && 'text-red-500',
-                  !isSelected && weekDay === 6 && 'text-blue-500',
+                  !isSelected && weekDay === 0 && 'text-weekend-sunday',
+                  !isSelected && weekDay === 6 && 'text-weekend-saturday',
                   !isSelected && weekDay !== 0 && weekDay !== 6 && 'text-foreground'
                 )}
               >

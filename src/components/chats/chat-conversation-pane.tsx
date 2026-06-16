@@ -1,11 +1,11 @@
-import { ArrowLeft, Plus, Send } from 'lucide-react'
-import { useState } from 'react'
-import type { ChatThread } from './chat-types'
+import { ArrowLeft, Plus, Send } from "lucide-react";
+import { useState } from "react";
+import type { ChatThread } from "./chat-types";
 
 interface ChatConversationPaneProps {
-  thread: ChatThread
-  title?: string
-  onBack?: () => void
+  thread: ChatThread;
+  title?: string;
+  onBack?: () => void;
 }
 
 export function ChatConversationPane({
@@ -13,11 +13,11 @@ export function ChatConversationPane({
   title = thread.customerName,
   onBack,
 }: ChatConversationPaneProps) {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState("");
 
   return (
     <div className="flex h-full flex-col">
-      <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-[#e8e5dc] bg-white px-4 py-3">
+      <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-border bg-white px-4 py-3">
         {onBack ? (
           <button
             type="button"
@@ -30,7 +30,9 @@ export function ChatConversationPane({
         ) : null}
 
         <div className="min-w-0 flex-1">
-          <p className="truncate text-[15px] font-semibold text-[#2c2a24]">{title}</p>
+          <p className="truncate text-[15px] font-semibold text-[#2c2a24]">
+            {title}
+          </p>
         </div>
       </header>
 
@@ -45,7 +47,7 @@ export function ChatConversationPane({
               </div>
             ) : null}
 
-            {messageItem.type === 'system' ? (
+            {messageItem.type === "system" ? (
               <div className="my-3 flex justify-center">
                 <p className="max-w-[85%] text-center text-[12px] text-[#9e9a8f]">
                   {messageItem.text}
@@ -54,10 +56,14 @@ export function ChatConversationPane({
             ) : (
               <div className="mb-3 flex flex-col items-end">
                 <div className="max-w-[75%] rounded-2xl bg-[#8a7d52] px-4 py-3 text-white">
-                  <p className="whitespace-pre-wrap text-[14px] leading-relaxed">{messageItem.text}</p>
+                  <p className="whitespace-pre-wrap text-[14px] leading-relaxed">
+                    {messageItem.text}
+                  </p>
                 </div>
                 <div className="mt-1 flex flex-row-reverse items-center gap-1">
-                  <span className="text-[11px] text-[#9e9a8f]">{messageItem.time}</span>
+                  <span className="text-[11px] text-[#9e9a8f]">
+                    {messageItem.time}
+                  </span>
                 </div>
               </div>
             )}
@@ -67,11 +73,11 @@ export function ChatConversationPane({
         ))}
       </div>
 
-      <div className="sticky bottom-0 border-t border-[#e8e5dc] bg-[#f5f3ee] px-4 py-3 pb-[env(safe-area-inset-bottom,12px)] lg:pb-3">
+      <div className="sticky bottom-0 border-t border-border bg-[#f5f3ee] px-4 py-3 pb-[env(safe-area-inset-bottom,12px)] lg:pb-3">
         <div className="flex items-center gap-2">
           <button
             type="button"
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#e8e5dc] text-[#9e9a8f] transition-colors hover:bg-white"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border text-[#9e9a8f] transition-colors hover:bg-white"
             aria-label="添付"
           >
             <Plus className="h-[18px] w-[18px]" />
@@ -82,7 +88,7 @@ export function ChatConversationPane({
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             placeholder="メッセージを入力..."
-            className="h-11 flex-1 rounded-full border border-[#e8e5dc] bg-white px-4 text-[14px] text-[#2c2a24] outline-none transition-colors placeholder:text-[#9e9a8f] focus:border-[#8a7d52]"
+            className="h-11 flex-1 rounded-full border border-border bg-white px-4 text-[14px] text-[#2c2a24] outline-none transition-colors placeholder:text-[#9e9a8f] focus:border-[#8a7d52]"
           />
 
           <button
@@ -96,5 +102,5 @@ export function ChatConversationPane({
         </div>
       </div>
     </div>
-  )
+  );
 }

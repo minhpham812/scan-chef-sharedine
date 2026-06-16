@@ -23,7 +23,7 @@ export function PlanPhotoUpload({ disabled = false }: PlanPhotoUploadProps) {
         />
         <label
           htmlFor={inputId}
-          className="flex h-[120px] w-[120px] flex-shrink-0 cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 border-dashed text-muted transition-colors hover:border-primary hover:text-primary"
+          className="flex h-[120px] w-[120px] shrink-0 cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border-2 border-dashed text-muted transition-colors hover:border-primary hover:text-primary"
         >
           <ImagePlus className="h-6 w-6" />
           <span className="text-[11px]">写真を追加</span>

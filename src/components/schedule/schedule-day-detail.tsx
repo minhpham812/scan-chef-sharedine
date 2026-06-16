@@ -49,7 +49,7 @@ export function ScheduleDayDetail({
               <button
                 type="button"
                 onClick={() => onDeleteSlot(slot.id)}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-red-500 hover:bg-red-50 transition-colors disabled:opacity-50"
+                className="flex h-8 w-8 items-center justify-center rounded-full text-danger hover:bg-danger-soft transition-colors disabled:opacity-50"
                 aria-label="削除"
               >
                 <Trash2 className="h-4 w-4" />

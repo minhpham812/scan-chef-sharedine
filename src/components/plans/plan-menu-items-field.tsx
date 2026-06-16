@@ -23,7 +23,7 @@ export function PlanMenuItemsField({
       <div className="space-y-3">
         {items.map((item, index) => (
           <div key={`menu-item-${index + 1}`} className="flex items-center gap-2">
-            <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-[12px] font-bold text-primary">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[12px] font-bold text-primary">
               {index + 1}
             </span>
             <input
@@ -37,7 +37,7 @@ export function PlanMenuItemsField({
               <button
                 type="button"
                 onClick={() => onRemoveItem(index)}
-                className="flex-shrink-0 p-1.5 text-muted transition-colors hover:text-warning"
+                className="shrink-0 p-1.5 text-muted transition-colors hover:text-warning"
                 aria-label={`${index + 1}番目の品目を削除`}
               >
                 <Trash2 className="h-4 w-4" />
