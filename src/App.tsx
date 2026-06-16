@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ChefLayout } from '@/components/layout/chef-layout'
 import { DashboardPage } from '@/pages/dashboard-page'
 import { BookingsPage } from '@/pages/bookings-page'
+import { ChatDetailPage } from '@/pages/chat-detail-page'
 import { ChatsPage } from '@/pages/chats-page'
 import { PlansPage } from '@/pages/plans-page'
 import { PlanCreatePage } from '@/pages/plan-create-page'
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/chats" element={<ChatsPage />} />
+          <Route path="/chat/:threadId" element={<ChatDetailPage />} />
           <Route path="/plans" element={<PlansPage />} />
           <Route path="/plans/new" element={<PlanCreatePage />} />
           <Route path="/schedule" element={<SchedulePage />} />

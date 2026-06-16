@@ -90,12 +90,14 @@ function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
 
 export function ChefLayout() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
+  const location = useLocation()
+  const hideMobileHeader = location.pathname.startsWith('/chat/')
 
   return (
     <div className="flex h-screen bg-background">
       <ChefSidebar />
-      <main className="flex-1 pb-8 lg:overflow-y-auto">
-        <MobileHeader onMenuOpen={() => setMobileNavOpen(true)} />
+      <main className={cn('flex-1 lg:overflow-y-auto', hideMobileHeader ? 'pb-0' : 'pb-8')}>
+        {!hideMobileHeader ? <MobileHeader onMenuOpen={() => setMobileNavOpen(true)} /> : null}
         <MobileNav open={mobileNavOpen} onClose={() => setMobileNavOpen(false)} />
         {mobileNavOpen && (
           <div
