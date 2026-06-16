@@ -31,7 +31,7 @@ export function ServiceAreaPage() {
             {address}为中心 {radius}km 范围内的区域
           </p>
         </div>
-        <Button className="w-full">エリア設定を保存</Button>
+        <Button size="action">エリア設定を保存</Button>
       </div>
     </div>
   )
